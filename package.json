@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "echo 'elancodairyexpo.com' > ./build/CNAME && gh-pages -d build"
   },
   "dependencies": {
     "@fontsource/fira-sans": "^4.5.8",
