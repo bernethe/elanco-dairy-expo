@@ -8,35 +8,35 @@ export const Instructions = () => {
         <div className='container mx-auto my-8'>
             <div className='md:flex'>
                 <div className='md:w-1/4 p-4'>
-                    <div className='text-center bg-white bg-opacity-70 backdrop-blur-sm px-2 py-8 block rounded'>
+                    <div className='text-center bg-white bg-opacity-70 backdrop-blur-sm px-2 py-8 block rounded h-full'>
                         <div className='px-12 text-6xl text-endeavour'>
                             <AiOutlineShoppingCart className='mx-auto' />
                         </div>
-                        <p>Compre productos Elanco™</p>
+                        <p>Compre productos Elanco</p>
                     </div>
                 </div>
                 <div className='md:w-1/4 p-4'>
-                    <div className='text-center bg-white bg-opacity-70 backdrop-blur-sm px-2 py-8 block rounded'>
+                    <div className='text-center bg-white bg-opacity-70 backdrop-blur-sm px-2 py-8 block rounded h-full'>
                         <div className='px-12 text-6xl text-endeavour'>
                             <GoBrowser className='mx-auto' />
-                        </div>
-                        <p>Ingrese al sitio elancotepremia.com</p>
-                    </div>
-                </div>
-                <div className='md:w-1/4 p-4'>
-                    <div className='text-center bg-white bg-opacity-70 backdrop-blur-sm px-2 py-8 block rounded'>
-                        <div className='px-12 text-6xl text-endeavour'>
-                            <AiOutlineForm className='mx-auto' />
                         </div>
                         <p>Ingrese los datos solicitados</p>
                     </div>
                 </div>
                 <div className='md:w-1/4 p-4'>
-                    <div className='text-center bg-white bg-opacity-70 backdrop-blur-sm px-2 py-8 block rounded'>
+                    <div className='text-center bg-white bg-opacity-70 backdrop-blur-sm px-2 py-8 block rounded h-full'>
+                        <div className='px-12 text-6xl text-endeavour'>
+                            <AiOutlineForm className='mx-auto' />
+                        </div>
+                        <p>Una vez ingresados, seleccione los productos comprados y acumule puntos</p>
+                    </div>
+                </div>
+                <div className='md:w-1/4 p-4'>
+                    <div className='text-center bg-white bg-opacity-70 backdrop-blur-sm px-2 py-8 block rounded h-full'>
                         <div className='px-12 text-6xl text-endeavour'>
                             <AiOutlineCheckCircle className='mx-auto' />
                         </div>
-                        <p>Suerte, queda participando</p>
+                        <p>Suerte, ya quedo participando</p>
                     </div>
                 </div>
             </div>
