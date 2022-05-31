@@ -41,6 +41,8 @@ export const Instructions = () => {
                 </div>
             </div>
         </div>
-        <p className='w-4/5 md:w-1/2 mx-auto my-8 text-center bg-white bg-opacity-50 backdrop-blur-sm p-2 block rounded'>Fecha del sorteo: 12 de junio</p>
+        <p className='w-4/5 md:w-1/2 mx-auto my-8 text-center bg-white bg-opacity-50 backdrop-blur-sm p-2 block rounded'>
+            Tenés tiempo hasta: <strong>12 de junio</strong>
+        </p>
     </div>
 }
