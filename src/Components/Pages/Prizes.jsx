@@ -1,9 +1,9 @@
 import React from 'react';
-import pr1 from '../../Assets/elanco premio-02.jpg';
-import pr2 from '../../Assets/elanco premio-01.jpg';
+import pr1 from '../../Assets/elanco-premio-02.jpg';
+import pr2 from '../../Assets/elanco-premio-01.jpg';
 
 const Prizes = () => {
-    return <div className='container mx-auto py-8'>
+    return <div className='container mx-auto py-8' id='premios'>
         <div className='text-center'>
             <h2 className='font-bold text-2xl'>Premios</h2>
             <p>Participa y podrás ganar premios como:</p>

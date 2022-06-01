@@ -3,7 +3,7 @@ import {AiOutlineShoppingCart, AiOutlineForm, AiOutlineCheckCircle} from 'react-
 import {GoBrowser} from 'react-icons/go';
 
 export const Instructions = () => {
-    return <div className='bg-[url(@/Assets/pollos.jpg)] bg-cover bg-center py-20'>
+    return <div className='bg-[url(@/Assets/pollos.jpg)] bg-cover bg-center py-20' id='mecanica'>
         <h2 className='font-bold text-2xl text-center w-4/5 md:w-1/2 mx-auto bg-white bg-opacity-50 backdrop-blur-sm p-2 my-8 block rounded'>Instrucciones</h2>
         <div className='container mx-auto my-8'>
             <div className='md:flex'>
@@ -42,7 +42,8 @@ export const Instructions = () => {
             </div>
         </div>
         <p className='w-4/5 md:w-1/2 mx-auto my-8 text-center bg-white bg-opacity-50 backdrop-blur-sm p-2 block rounded'>
-            Tenés tiempo hasta: <strong>12 de junio</strong>
+            Tenés tiempo hasta: <strong>31 de agosto</strong> <br />
+            Fecha del sorteo: <strong>05 de septiembre</strong>
         </p>
     </div>
 }

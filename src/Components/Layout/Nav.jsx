@@ -1,5 +1,6 @@
 import React from 'react';
 import Elanco from '../UI/Elanco';
+import reglamento from '../../Assets/tyc-2022.pdf';
 
 const Nav = () => {
     return <>
@@ -15,7 +16,7 @@ const Nav = () => {
                     <a href='/#premios' className='px-4 flex justify-center items-center'>Premios</a>
                 </li>
                 <li className='flex items-stretch'>
-                    <a href='/#' className='px-4 flex justify-center items-center'>Reglamento</a>
+                    <a href={reglamento} target='_blank' className='px-4 flex justify-center items-center'>Reglamento</a>
                 </li>
             </ul>
             <div className='hidden md:block flex-grow-0 min-w-[95px] py-2 mx-2'><Elanco /></div>
