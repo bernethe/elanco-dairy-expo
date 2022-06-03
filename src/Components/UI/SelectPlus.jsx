@@ -2,7 +2,7 @@ import React from 'react'
 import {GoChevronDown} from 'react-icons/go'
 
 const SelectPlus = ({data, placeholder, icon, value, setValue}) => {
-    return <label className='relative block w-full text-endeavour h-10 my-4'>
+    return <label className='relative block w-full text-endeavour h-10 my-4 bg-white'>
         <select
             className={ `w-full absolute left-0 top-0 pl-10 pr-4 py-2 border border-endeavour rounded ${ (value === placeholder) ? 'text-gray' : 'text-black' } appearance-none` }
             value={value}
