@@ -4,7 +4,7 @@ import Elanco from '../UI/Elanco';
 import {AiOutlineUser, AiOutlineIdcard, AiOutlineMail, AiOutlinePhone, AiOutlineFileText, AiOutlineGlobal, AiOutlineShopping} from 'react-icons/ai';
 import SelectPlus from '../UI/SelectPlus';
 
-const FormStep1 = ({name, docID, email, phone, bill, country, acceptRules, handleStep1, setName, setDocID, setEmail, setPhone, setBill, setCountry, setAcceptRules, COUNTRY_DATA, COUNTRY_PLACEHOLDER}) => {
+const FormStep1 = ({name, docID, email, phone, bill, local, country, acceptRules, handleStep1, setName, setDocID, setEmail, setPhone, setBill, setLocal, setCountry, setAcceptRules, COUNTRY_DATA, COUNTRY_PLACEHOLDER}) => {
 	return <div className='bg-[url(@/Assets/ganao-ostinao.jpg)] bg-cover bg-center py-12'>
 		<div className='container mx-auto' id='activar'>
 			<div className='md:flex items-center'>
@@ -20,6 +20,7 @@ const FormStep1 = ({name, docID, email, phone, bill, country, acceptRules, handl
 					<InputPlus placeholder='Teléfono' icon={<AiOutlinePhone className='w-full h-full' />} value={phone} setValue={setPhone} />
 					<InputPlus placeholder='Correo Electrónico' icon={<AiOutlineMail className='w-full h-full' />} value={email} setValue={setEmail} />
 					<InputPlus placeholder='Número de Factura' icon={<AiOutlineFileText className='w-full h-full' />} value={bill} setValue={setBill} />
+					<InputPlus placeholder='Local de compra' icon={<AiOutlineShopping className='w-full h-full' />} value={local} setValue={setLocal} />
 					<SelectPlus data={COUNTRY_DATA} placeholder={COUNTRY_PLACEHOLDER} icon={<AiOutlineGlobal className='w-full h-full' />} value={country} setValue={setCountry} />
 					<label className='bg-white bg-opacity-50 backdrop-blur-sm p-2 block rounded mb-4'>
 						<input type='checkbox' checked={acceptRules} onChange={ () => setAcceptRules(!acceptRules) } />

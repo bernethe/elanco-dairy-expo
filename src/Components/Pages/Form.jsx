@@ -21,6 +21,7 @@ const Form = ({iniData}) => {
 	const [email, setEmail] = useState('');
 	const [phone, setPhone] = useState('');
 	const [bill, setBill] = useState('');
+	const [local, setLocal] = useState('');
 	const [acceptRules, setAcceptRules] = useState(false);
 	const [country, setCountry] = useState(COUNTRY_PLACEHOLDER);
 	const [totalPoints, setTotalPoints] = useState(0);
@@ -43,6 +44,7 @@ const Form = ({iniData}) => {
 		setEmail(email.trim());
 		setPhone(phone.trim());
 		setBill(bill.trim());
+		setBill(local.trim());
 
 		let tempErrors = [];
 
@@ -64,6 +66,10 @@ const Form = ({iniData}) => {
 
 		if(bill === '' || bill.length < 5) {
 			tempErrors.push('La factura es requerida y debe tener al menos 5 caracteres');
+		}
+
+		if(local === '' || local.length < 5) {
+			tempErrors.push('El local de compra es requerida y debe tener al menos 5 caracteres');
 		}
 
 		if(country === COUNTRY_PLACEHOLDER) {
@@ -99,6 +105,7 @@ const Form = ({iniData}) => {
 			_fd.append('email', email);
 			_fd.append('phone', phone);
 			_fd.append('bill', bill);
+			_fd.append('local', local);
 			_fd.append('country', country);
 			_fd.append('points', totalPoints);
 			_fd.append('prods', JSON.stringify(tempProds));
@@ -135,6 +142,7 @@ const Form = ({iniData}) => {
 			email={ email }
 			phone={ phone }
 			bill={ bill }
+			local={ local }
 			country={ country }
 			acceptRules={ acceptRules }
 			handleStep1={ handleStep1 }
@@ -143,6 +151,7 @@ const Form = ({iniData}) => {
 			setEmail={ setEmail }
 			setPhone={ setPhone }
 			setBill={ setBill }
+			setLocal={ setLocal }
 			setCountry={ setCountry }
 			setAcceptRules={ setAcceptRules }
 			COUNTRY_DATA={ COUNTRY_DATA }
